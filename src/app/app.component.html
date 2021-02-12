@@ -1,0 +1,7 @@
+<div class="my-form">
+  <label>Поиск пользователя</label><br>
+  <input id="search" type="text" [(ngModel)]="searchStr">
+<ul>
+  <li *ngFor="let user of users | searchusers:searchStr">{{user.name | uppercase }}</li>
+</ul>
+</div>
