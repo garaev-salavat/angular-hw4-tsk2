@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SearchusersPipe } from './searchusers.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserblockModule } from './userblock/userblock.module';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    UserblockModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,10 @@
-<div class="my-form">
-  <label>Поиск пользователя</label><br>
+<div class="container">
+  <div class="row">
+    <label>Поиск пользователя</label><br>
   <input id="search" type="text" [(ngModel)]="searchStr">
-<ul>
-  <li *ngFor="let user of users | searchusers:searchStr">{{user.name | uppercase }}</li>
-</ul>
+
+    <app-userblock *ngFor="let user of users | searchusers:searchStr"
+    [user]="user"
+    ></app-userblock>
+  </div>
 </div>
